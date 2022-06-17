@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>PassWord Generator</h1>
+      <nav>CLICK GENERATE</nav>
+      <p class="length">LENGTH: 16</p>
+      <article>
+        <h2>4</h2>
+        <input id="range" type="range" min="4" max="32" />
+        <h2>32</h2>
+      </article>
+      <p>SETTINGS</p>
+      <section>
+        <div>
+          <h2>Include Uppercase</h2>
+          <label class="switch">
+            <input class="uppercase" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div>
+          <h2>Include Lowercase</h2>
+          <label class="switch">
+            <input type="checkbox" class="lowercase" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="numbers">
+          <h2>Include Numbers</h2>
+          <label class="switch">
+            <input type="checkbox" class="number" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="symbols">
+          <h2>Include Symbols</h2>
+          <label class="switch">
+            <input type="checkbox" class="symbol" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </section>
+      <button class="submit">GENERATE PASSWORD</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

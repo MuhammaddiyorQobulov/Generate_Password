@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Poppins;
+}
+
+body {
+  background-color: #4891fa;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container {
+  width: 30vw;
+  height: 40vw;
+  padding: 2vw;
+  border-radius: 10px;
+  background-color: #0c0d29;
+}
+body .container h1 {
+  font-size: 2.2vw;
+}
+body .container h2 {
+  font-size: 2vw;
+}
+body .container p {
+  font-size: 0.9vw;
+  opacity: 0.6;
+  margin-top: 0.5vw;
+}
+body .container nav {
+  font-size: 1vw;
+  padding: 0.3vw 1vw;
+  background-color: #1c1c38;
+  border-radius: 5px;
+  text-align: center;
+}
+body .container article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .container article input {
+  cursor: pointer;
+  width: 22vw;
+  height: 0.5vw;
+  outline: none;
+}
+body .container section div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw;
+  margin-top: 0.5vw;
+  width: 100%;
+  background-color: #1c1c38;
+  height: 4vw;
+  border-radius: 5px;
+  /* Rounded sliders */
+}
+body .container section div .switch {
+  position: relative;
+  display: inline-block;
+  width: 4vw;
+  height: 2.2vw;
+}
+body .container section div .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+body .container section div .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+body .container section div .slider:before {
+  position: absolute;
+  content: "";
+  height: 2vw;
+  width: 2vw;
+  left: 0.15vw;
+  bottom: 0.1vw;
+  background-color: white;
+  transition: 0.4s;
+}
+body .container section div input:checked + .slider {
+  background-color: #2196f3;
+}
+body .container section div input:checked + .slider:before {
+  transform: translateX(26px);
+}
+body .container section div .slider.round {
+  border-radius: 34px;
+}
+body .container section div .slider.round:before {
+  border-radius: 50%;
+}
+body .container section div h2 {
+  font-size: 1.5vw;
+}
+body .container .submit {
+  width: 100%;
+  height: 11%;
+  background: linear-gradient(to right, #616bdd, #6442a0);
+  border-radius: 5px;
+  margin-top: 1vw;
+  font-size: 1.3vw;
+  font-weight: 900;
+  cursor: pointer;
+}
