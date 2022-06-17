@@ -105,12 +105,12 @@ body {
         }
 
         input:checked + .slider:before {
-          transform: translateX(26px);
+          transform: translateX(2vw);
         }
 
         /* Rounded sliders */
         .slider.round {
-          border-radius: 34px;
+          border-radius: 3vw;
         }
 
         .slider.round:before {
